@@ -1,0 +1,78 @@
+<html>
+<head>
+<title> GoldHen Host Menu </title>
+</head>
+<body style="background-color:#3462a8;color:white;font-size:20px;text-align:center;" onload="go()">
+<h1 style='font-size:40px;margin:0;'>GoldHen Host Menu</h1>
+<h3 id=msgs style='font-size:26px;margin:0;'>Hen 2.1.3b for fw 7.5x ported by Karo</h3>
+<hr><br>
+<script>
+if(document.cookie.indexOf('kex=0') >= 0)
+    document.location.href = '../index.html';
+</script>
+<script>
+function print(){}
+
+var fwFromUA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple'));
+fwFromUA = fwFromUA.replace('.', '');
+var scriptCode = '';
+
+function preloadScripts(lst)
+{
+    for(var i = 0; i < lst.length; i++)
+    {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', lst[i], false);
+        xhr.send('');
+        scriptCode += xhr.responseText + '\n';
+    }
+}
+
+function done()
+{
+    if(main_ret == 0 || main_ret == 179)
+    {
+        alert("PS4 Jailbreak loaded !\nPress OK now");
+        read_ptr_at(0);
+    }
+    else
+        alert("Jailbreak failed! Reboot your PS4 and try again.");
+}
+
+window.midExploit = function()
+{
+
+    var scripts = ['blob.js', 'jb.js'];
+
+    if (fwFromUA != "750" && fwFromUA != "751" && fwFromUA != "755") {
+        die('Unsupported Firmware!');
+		exit();
+    }
+    
+    scripts.push('loader.js');
+    scripts.push('hen213b.js');
+    scripts.push('netcat.js');
+
+    preloadScripts(scripts, go);
+}
+
+
+window.postExploit = function()
+{
+    document.cookie = 'kex=0';
+    setTimeout(function() //update the screen one last time...
+    {
+        eval.call(window, scriptCode);
+        done();
+    }, 100);
+};
+</script><br><br><br>
+<script src="webkit-7.50/utils.js"></script>
+<script src="webkit-7.50/int64.js"></script>
+<script src="webkit-7.50/ps4.js"></script>
+<button style=opacity:0 id="input1" onfocus="handle2()"></button>
+<button style=opacity:0 id="input2"></button>
+<button style=opacity:0 id="input3" onfocus="handle2()"></button>
+<select style=opacity:0 id="select1"><option value="value1">Value1</option></select>
+</body>
+</html>

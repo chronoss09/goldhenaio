@@ -1,0 +1,38 @@
+<html manifest="Cache.manifest">
+
+<head>
+    <meta charset="utf-8" />
+    <title>GoldHen Host Menu</title>
+    <link rel="shortcut icon" href="favicon.ico"></link>
+</head>   
+<script>
+function CacheProgress(e){Percent=(Math.round(e.loaded / e.total * 100));parent.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
+function CachingDone(){setTimeout(function(){parent.msgs.innerHTML="Cache Installed Successfully";},2000);setTimeout(function(){parent.msgs.innerHTML="Re-Open Your Browser To Continue";},4000);}
+function UpdateDone(){setTimeout(function(){parent.msgs.innerHTML="Cache Updated Successfully";},2000);setTimeout(function(){parent.msgs.innerHTML="Re-Open Your Browser To Continue";},4000);}
+window.applicationCache.addEventListener("progress",CacheProgress,false);window.applicationCache.addEventListener('updateready', UpdateDone,false);window.applicationCache.oncached=function(e){CachingDone();};
+</script>
+<body style="background-color:#3462a8;color:white;font-size:20px;text-align:center;">
+<h1 style='font-size:40px;margin:0;'> GoldHen Host Menu </h1>
+<h3 style='font-size:26px;margin:0;'>GoldHen paylaod for 5.05</h3>
+<hr><br><br><br>
+
+<table bgcolor="black" cellpadding="5" cellspacing="8" border="3" width="40%" align="center">
+	<colgroup width="23%">
+	<colgroup span="2" width="22%">
+
+<h2><i><div id=msgs>Choose your GoldHen version</h2></div>
+<tr align="center">
+	<td><a href="goldhen10.html"><img src="1.0.png"></a></td>
+	<td><a href="goldhen11.html"><img src="B3.png"></a></td>
+	<td><a href="goldhen11b3.html"><img src="1.1.png"></a></td>
+</tr>
+<div style="position:fixed;left:0;bottom:-8px;width:100%;font-size:16px;">
+<hr>
+*Original host by Leefull, mod by Chronoss, GoldHen by Sistr0 & Joonie86 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PS4 Firmware <span id="PS4fw"></span><hr>
+</div>
+<script>
+UA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple'));
+PS4fw.innerHTML=""+UA+" Detected";
+</script>
+</body>
+</html>
