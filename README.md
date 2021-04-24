@@ -10,4 +10,4 @@ This host is only for __GoldHen__ payload from SiSTR0 and Joonie86
     * GoldHen 1.1
     * Hen 2.3.1b ported on fw 7.5x by Karo
 
-[PHOTO](20210424003633)
+[PHOTO](https://github.com/chronoss09/goldhenaio/blob/main/20210424003633.jpg)
