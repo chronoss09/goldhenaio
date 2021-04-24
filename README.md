@@ -10,4 +10,8 @@ This host is only for __GoldHen__ payload from SiSTR0 and Joonie86
     * GoldHen 1.1
     * Hen 2.3.1b ported on fw 7.5x by Karo
 
-[PHOTO](https://github.com/chronoss09/goldhenaio/blob/main/20210424003633.jpg)
+Host here : https://chronoss09.github.io/goldhenaio 
+
+My Paypal : [just click here](https://www.paypal.com/paypalme/chronoss01)
+
+![PHOTO](https://github.com/chronoss09/goldhenaio/blob/main/20210424003633.jpg)
