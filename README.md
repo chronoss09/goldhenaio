@@ -8,6 +8,7 @@ This host is only for __GoldHen__ payload from SiSTR0 and Joonie86
     * GoldHen 1.0
     * GoldHen b3
     * GoldHen 1.1
+    * GoldHen 2.0b
     * Hen 2.3.1b ported on fw 7.5x by Karo
 
 Host here : https://chronoss09.github.io/goldhenaio 
