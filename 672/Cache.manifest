@@ -8,6 +8,7 @@ CACHE:
 
 1.0.png
 1.1.png
+2.0.png
 B3.png
 checker.js
 goldhen_1.0.html
@@ -16,6 +17,8 @@ goldhen_1.1.html
 goldhen_1.1.js
 goldhen_1.1b3.html
 goldhen_1.1b3.js
+goldhen_2.0.js
+goldhen_2.0.html
 index.html
 common\exploit.js
 common\helpers.js
